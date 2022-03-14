@@ -1,0 +1,143 @@
+#ladder {
+  animation-name: ladder;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 0.5s;
+  opacity: 0;
+}
+
+#antenna {
+  animation-name: ladder;
+  animation-duration: 0.4s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 0.7s;
+  opacity: 0;
+}
+
+#building {
+  animation-name: ladder;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes ladder {
+  from {
+    transform: translateY(5%);
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+#hook {
+  animation-name: hook;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: 1;
+}
+
+@keyframes hook {
+  from {
+    transform: translateX(3%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+#box1 {
+  animation-name: box;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+#box2 {
+  animation-name: box;
+  animation-duration: 0.3s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 0.3s;
+  opacity: 0;
+}
+
+@keyframes box {
+  from {
+    transform: translateX(5%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+#hand-with-brush {
+  animation-name: brush;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  transform: rotate(5deg);
+  transform-origin: 8.8% 67.55%;
+}
+
+@keyframes brush {
+  from {
+    transform: rotate(5deg);
+  }
+  to {
+    transform: rotate(0);
+  }
+}
+
+#hand-with-screwdriver {
+  animation-name: screwdriver;
+  animation-duration: 1.2s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+
+  transform: rotate(-3deg);
+  transform-origin: 86.2% 62.76%;
+}
+
+@keyframes screwdriver {
+  from {
+    transform: rotate(-3deg);
+  }
+  to {
+    transform: rotate(0);
+  }
+}
+
+#hand-with-roulon {
+    animation-name: brush;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    transform: rotate(5deg);
+    transform-origin: 8.8% 67.55%;
+  }
+  
+  @keyframes brush {
+    from {
+      transform: rotate(5deg);
+    }
+    to {
+      transform: rotate(0);
+    }
+  }
