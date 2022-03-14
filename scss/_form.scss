@@ -1,0 +1,66 @@
+.input-wrapper {
+    position: relative;
+    width: 100%;
+  }
+  
+  input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
+    transition: background-color 5000s ease-in-out 0s;
+  }
+  
+  .input-text {
+    flex-grow: 1;
+    width: 100%;
+    border-radius: 4px;
+    border: $outline;
+    padding: 15px 16px 15px;
+    height: 56px;
+    box-sizing: border-box;
+  
+    & + label {
+      position: absolute;
+      right: 15px;
+      top: 0;
+      height: 56px;
+      display: flex;
+      padding: 0 2px;
+      box-sizing: border-box;
+      align-items: center;
+      transition: 0.1s;
+      color: $black-medium;
+    }
+  
+    &::placeholder {
+      color: white;
+    }
+  
+    &:focus {
+      border: 2px solid $blue900;
+      padding: 14px 15px 14px;
+      outline: none;
+    }
+  
+    &:focus + label {
+      font-size: 12px;
+      top: -8px;
+      height: 16px;
+      background-color: white;
+    }
+  
+    &:not(:placeholder-shown) + label {
+      font-size: 12px;
+      top: -8px;
+      height: 16px;
+      background-color: white;
+    }
+  
+    &:invalid {
+      border: 2px solid $error;
+      padding: 14px 15px 14px;
+      outline: none;
+    }
+  }
+  
+  textarea.input-text {
+    min-height: 126px;
+  }

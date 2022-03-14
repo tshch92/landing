@@ -1,54 +1,82 @@
 p {
-  font-size: 16px;
-  letter-spacing: 0.5px;
-  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 0.2px;
+  font-weight: 400;
   line-height: 24px;
 }
 
 .body1 {
-  font-size: 16px;
-  letter-spacing: 0.5px;
-  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 0.2px;
+  font-weight: 400;
   line-height: 24px;
 }
 
 .body2 {
-  font-size: 14px;
+  font-size: 13px;
   letter-spacing: 0.25px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 20px;
 }
 
 .overline {
-  font-size: 10px;
+  font-size: 9px;
   font-weight: 700;
-  letter-spacing: 1.5px;
+  letter-spacing: 1.4px;
   text-transform: uppercase;
 }
 
 .h6 {
-  font-size: 20px;
+  font-size: 18px;
   line-height: 24px;
-  font-weight: 600;
-  letter-spacing: 0.15px;
+  font-weight: 500;
 }
 
 .h4 {
-    font-size: 34px;
-    line-height: 36px;
-    font-weight: 400;
-  }
+  font-size: 32px;
+  line-height: 36px;
+  font-weight: 400;
+  letter-spacing: -0.2px;
+}
+
+.h3 {
+  font-weight: 400;
+  font-size: 45px;
+  line-height: 56px;
+  letter-spacing: 0px;
+}
 
 .h2 {
-  font-size: 60px;
+  font-size: 56px;
   line-height: 72px;
-  letter-spacing: -0.5px;
+  letter-spacing: -0.7px;
   font-weight: 300;
 }
 
 .h1 {
+  font-weight: 300;
+  font-size: 89px;
+  line-height: 112px;
+  letter-spacing: -2px;
+}
+
+.accent {
+  font-weight: 400;
+  color: $blue700;
+}
+
+@media only (max-width: 1078px) {
+  & .h1 {
+    font-size: 56px;
+    line-height: 72px;
+    letter-spacing: -0.7px;
     font-weight: 300;
-    font-size: 96px;
-    line-height: 112px;
-    letter-spacing: -1.5px;
+  }
+
+  & .h2 {
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 56px;
+    letter-spacing: 0px;
+  }
 }

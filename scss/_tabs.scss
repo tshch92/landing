@@ -1,0 +1,53 @@
+@mixin langicon {
+  content: "";
+  height: 16px;
+  width: 16px;
+  display: inline-block;
+
+  margin: 0 5px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.lang {
+  &-he:before {
+    @include langicon;
+    background-image: url(./images/Flag_of_Israel.svg);
+  }
+  &-en:before {
+    @include langicon;
+    background-image: url(./images/Flag_of_the_United_States.svg);
+  }
+}
+
+
+.tab {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+
+    & > :not(:last-child):not(:first-child) {
+        margin: 0 10px;
+        }
+
+    & .tablinks {
+        display: flex;
+        align-items: center;
+        background-color: transparent;
+        outline: none;
+        border: none;
+        text-decoration-style: dashed;
+        text-decoration-line: underline;
+
+        &.active {
+            text-decoration-line: none;
+        }
+    }
+
+    & a {
+        color: black;
+    }
+
+}
+
